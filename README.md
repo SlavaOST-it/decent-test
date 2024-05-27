@@ -1,8 +1,8 @@
-# WCountries of the world App README
+# Countries of the world App README
 
 ## Описание
 
-Приложение для отображения данных о странах мира, полученных из [https://restcountries.com/v3.1/name/deutschland]
+Приложение для отображения данных о странах мира, полученных из [https://restcountries.com/]
  с использованием React Typescript и Ant Design.
 
 ## Функциональные возможности:
