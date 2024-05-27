@@ -1,14 +1,22 @@
-import {combineReducers, configureStore} from "@reduxjs/toolkit";
-import thunkMiddleware from 'redux-thunk'
+import {combineReducers, configureStore, ThunkDispatch} from "@reduxjs/toolkit";
 import {setupListeners} from "@reduxjs/toolkit/query";
 import {countriesApi} from "../api/countriesApi";
+import {countryReducer} from "./reducers/countryReducer/countryReducer";
+import {SetCountryAT} from "./reducers/countryReducer/CountryActionTypes";
+import {appReducer} from "./reducers/appReducer/appReducer";
+import {AppReducerActionTypes} from "./reducers/appReducer/appReducer-types";
 
 
 const rootReducer = combineReducers({
+    app: appReducer,
+    country: countryReducer,
+
     // RTK Query
     [countriesApi.reducerPath]: countriesApi.reducer
 
 })
+
+type ReduxActionType = AppReducerActionTypes | SetCountryAT
 
 export const store = configureStore({
     reducer: rootReducer,
@@ -19,4 +27,5 @@ export const store = configureStore({
 setupListeners(store.dispatch)
 
 export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+
+export type AppDispatchType = ThunkDispatch<RootState, unknown, ReduxActionType>
