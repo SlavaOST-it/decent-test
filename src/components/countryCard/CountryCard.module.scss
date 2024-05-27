@@ -1,3 +1,5 @@
+@import "../../assets/styles/variables";
+
 .card {
   display: flex;
   align-items: center;
@@ -5,7 +7,6 @@
 
   width: 350px;
   height: 100px;
-  //min-width: 100px;
 
   border-radius: 5px;
 
@@ -13,12 +14,16 @@
   padding: 0 10px;
 
   gap: 10px;
-  background-color: rgba(53, 124, 40, 0.58);
+  background-color: $color-card;
 
   cursor: pointer;
+  transition: $transition-speed ease-in;
 
   &:hover{
-    background-color: rgba(40, 94, 30, 0.86);
+    color: #eaeaea;
+    background-color:  rgba($color-card, 0.9);
+    box-shadow: $box-shadow;
+    transition: $transition-speed ease-in;
   }
 
   .img_card{

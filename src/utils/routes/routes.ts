@@ -1,5 +1,5 @@
 export const PATH = {
     allCountries: '/allCountries',
-    country: '/country',
+    country_info: '/country_info',
     page404: '/pageNotFound',
 }
