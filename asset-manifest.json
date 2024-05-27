@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/decent-test/static/css/main.b675e950.css",
+    "main.js": "/decent-test/static/js/main.2f727673.js",
+    "static/js/453.77a7ddd2.chunk.js": "/decent-test/static/js/453.77a7ddd2.chunk.js",
+    "static/media/map-zemlia.jpg": "/decent-test/static/media/map-zemlia.e9ef042cb8ffafe5821a.jpg",
+    "index.html": "/decent-test/index.html",
+    "main.b675e950.css.map": "/decent-test/static/css/main.b675e950.css.map",
+    "main.2f727673.js.map": "/decent-test/static/js/main.2f727673.js.map",
+    "453.77a7ddd2.chunk.js.map": "/decent-test/static/js/453.77a7ddd2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b675e950.css",
+    "static/js/main.2f727673.js"
+  ]
+}
